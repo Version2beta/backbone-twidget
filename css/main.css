@@ -60,3 +60,60 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*
+   Resets are all done now
+
+   Project styles start here
+ */
+
+.twidget {
+	width: 360px;
+	height: 480px;
+	margin: 120px auto;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border: 3px solid #ccc;
+	border-radius: 8px;
+	font-family: 'Questrial', sans-serif;
+	font-size: 18px;
+	line-height: 1.25em;
+}
+
+.twidget ul li {
+	padding: 20px;
+}
+
+.twidget ul li:nth-child(even) {
+	background-color: #ccc;
+}
+
+.twidget span,
+.twidget img {
+	display: block;
+}
+
+.twidget img {
+	width: 48px;
+	height: 48px;
+	float: left;
+}
+
+.twidget .from,
+.twidget .when {
+	width: 248px;
+	float: right;
+}
+
+.twidget .from {
+	font-size: 16px;
+}
+
+.twidget .when {
+	font-size: 12px;
+}
+
+.twidget .tweet {
+	clear: both;
+	padding-top: 6px;
+}
