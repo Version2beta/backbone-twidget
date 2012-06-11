@@ -73,5 +73,4 @@ bbtwitter.Twidget = Backbone.View.extend({
 
 twidget = new bbtwitter.Twidget();
 twidget.render();
-$('.moar-tweets').click(function() { twidget.next(); });
 
