@@ -66,9 +66,6 @@ bbtwitter.Twidget = Backbone.View.extend({
 		'</ul>')
 });
 
-// Routers
-
-
 // And rock-n-roll
 
 twidget = new bbtwitter.Twidget();
