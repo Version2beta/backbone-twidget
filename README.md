@@ -1,6 +1,8 @@
 backbone-twitter-demo
 =====================
 
-A simple Backbone.js demonstration written for Web414. Trying something @Arlen suggested - using tags to break the code into presentable chunks that can be called during a "live coding" demo.
+A simple demonstration of Backbone.js' collections and views. This widget searches Twitter for a given phrase and puts it in an element on the page. If the element is scrollable, it will do "infinite scrolling" - load more when you scroll to the bottom of the list.
 
+I like this approach better than the standard Twitter widget that shows a user's stream. Using this widget with a search for the user will display conversations with and about the user. The same applies to a company, a product, a project, a package, an event - the widget shows people talking about your stuff, not you talking.
 
+Originally written for a presentation that @Arlen (paladin on GitHub) and I gave at web414 in Milwaukee, Wisconsin, USA on June 14, 2012.

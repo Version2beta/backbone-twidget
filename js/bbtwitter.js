@@ -15,7 +15,7 @@ bbtwitter.Tweet = Backbone.Model.extend({
 bbtwitter.Tweets = Backbone.Collection.extend({
     model: bbtwitter.Tweet,
 	url: function () {
-		return 'http://search.twitter.com/search.json?q=' + this.query + '&page=' + this.page + '&callback=?'
+		return 'http://search.twitter.com/search.json?q=' + encodeURIComponent(this.query) + '&page=' + this.page + '&callback=?'
 	},
 	parse: function(resp, xhr) {
 		return resp.results;
@@ -68,6 +68,6 @@ bbtwitter.Twidget = Backbone.View.extend({
 
 // And rock-n-roll
 
-twidget = new bbtwitter.Twidget();
+var twidget = new bbtwitter.Twidget();
 twidget.render();
 
