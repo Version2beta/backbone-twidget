@@ -21,7 +21,7 @@ bbtwitter.Tweets = Backbone.Collection.extend({
 		return resp.results;
 	},
 	page: 1,
-	query: 'version2beta'
+	query: 'backbone js'
 });
 
 // Views
